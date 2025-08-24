@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Réservation — Grand Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><div class="logo">GS</div><div class="brand-text"><strong>Grand Studio</strong><small>Photographie • Vidéo</small></div></a>
+      <nav class="menu" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services & Tarifs</a>
+        <a href="about.html">À propos</a>
+        <a class="active btn btn-primary" href="contact.html">Réserver</a>
+      </nav>
+      <button class="burger" id="burger">☰</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container contact">
+      <div class="contact-form">
+        <h1>Contact & Réservation</h1>
+        <p class="lead">Remplis le formulaire : ça ouvre WhatsApp avec ton message prêt.</p>
+        <form id="booking-form">
+          <div class="row">
+            <input class="input" type="text" name="name" placeholder="Votre nom" required>
+            <input class="input" type="tel" name="phone" placeholder="Téléphone" required>
+          </div>
+          <div class="row">
+            <select class="input" name="service" required>
+              <option value="">Choisissez un service</option>
+              <option value="Portrait">Portrait</option>
+              <option value="Mariage">Mariage</option>
+              <option value="Événement">Événement</option>
+              <option value="Corporate">Corporate</option>
+            </select>
+            <input class="input" type="date" name="date" required>
+          </div>
+          <textarea class="input" name="notes" placeholder="Détails / brief"></textarea>
+          <button class="btn btn-primary" type="submit">Envoyer sur WhatsApp</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Nos coordonnées</h2>
+        <ul>
+          <li>WhatsApp : <b>+243 823961875</b></li>
+          <li>Email : <b>cDimsphotographydrc@gmail.com</b></li>
+          <li>Adresse : <b>MATONGE COMMUNE DE KALAMU ( VICTOIRE  ) RÉFÉRENCE SUPER MARCHER SK AVENUE BONGA 6A 📸</b></li>
+        </ul>
+        <div class="map">
+          <!-- Tu peux remplacer par un embed Google Maps -->
+          <img src="img/jevie.jpg" alt="Plan d'accès">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="copy">© <span id="year"></span> Grand Studio</div>
+  </footer>
+</body>
+</html>

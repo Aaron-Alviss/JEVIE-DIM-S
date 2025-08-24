@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Grand Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Reuse header -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><div class="logo">GS</div><div class="brand-text"><strong>Grand Studio</strong><small>Photographie • Vidéo</small></div></a>
+      <nav class="menu" id="menu">
+        <a href="index.html">Accueil</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services & Tarifs</a>
+        <a href="about.html">À propos</a>
+        <a class="btn btn-primary" href="contact.html">Réserver</a>
+      </nav>
+      <button class="burger" id="burger">☰</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Portfolio</h1>
+      <p class="lead">Un aperçu de nos réalisations. Cliquez pour agrandir.</p>
+      <div class="grid grid-3 gallery">
+        <!-- Ajoute/duplique ces items et remplace les URLs par tes photos -->
+        <img src="img/IMG-20250824-WA0182.jpg" alt="" data-lightbox="https://picsum.photos/seed/gal1/1600/1067">
+        <img src="img/IMG-20250824-WA0183.jpg" alt="" data-lightbox="https://picsum.photos/seed/gal2/1600/1067">
+        <img src="img/IMG-20250824-WA0188.jpg" alt="" data-lightbox="https://picsum.photos/seed/gal3/1600/1067">
+        <img src="img/IMG-20250824-WA0186.jpg" alt="" data-lightbox="https://picsum.photos/seed/gal4/1600/1067">
+        <img src="img/l marier.jpg" alt="" data-lightbox="https://picsum.photos/seed/gal5/1600/1067">
+        <img src="img/homme.jpg" alt="" data-lightbox="https://picsum.photos/seed/gal6/1600/1067">
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="">
+    <button class="close" aria-label="Fermer">✖</button>
+  </div>
+
+  <footer class="footer">
+    <div class="copy">© <span id="year"></span> Grand Studio</div>
+  </footer>
+</body>
+</html>
